@@ -1,0 +1,316 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body{
+    background-color: rgb(244, 228, 243);
+
+}
+
+.profileDetails{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px 0;
+}
+.dp{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.myDetails{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+}
+.nameDetails, .firstline{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 70px;
+}
+
+.info{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.nameDetails h4, .nameDetails h6{
+    background-color: rgba(168, 168, 168, 0.694);
+}
+
+.dp img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 5px solid rgb(135, 1, 63);
+    padding: 5px;
+}
+
+.navb{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.profile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.profile img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+.profileName{
+font-weight: bold;    
+}
+
+
+.fig{
+    width: 55%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+}
+.fig p{
+    color: rgb(10, 9, 9);
+    font-size: 30px;
+}
+
+.red{
+    color: red;
+}
+
+.load{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loadmore{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+img{
+    width: 500px;
+    height: 500px;
+}
+
+.images{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 10px 0;
+
+}
+
+.image{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.imageItem{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fig .bi:hover {
+    font-size: 1.5rem;
+}
+
+@media(max-width : 920px){
+    .profileDetails{
+        justify-content: center;
+        padding: 50px 10px;
+    }
+    .nameDetails, .firstline{
+        gap: 50px;
+    }
+
+}
+@media(max-width : 850px){
+    .nameDetails, .firstline{
+        gap: 30px;
+    }
+
+}
+@media(max-width : 745px){
+    .nameDetails{
+        gap: 20px;
+    }
+}
+@media(max-width : 700px){
+
+    .myDetails{
+        gap: 10px;
+    }
+
+    .profileDetails{
+        padding: 20px 0;
+        gap: 20px;
+    }
+
+    .dp{
+        width: 30%;
+    }
+    .myDetails{
+        width: 70%;
+    }
+    .dp img{
+        width: 150px;
+        height: 150px;
+    }
+
+    .nameDetails h4, .nameDetails h6{
+        font-size: 12px;
+    }
+    .nameDetails h5{
+        font-size: 16px;
+        font-weight: bolder;
+    }
+    .firstline{
+        gap: 20px;
+    }
+    .firstline h6{
+        font-size: 15px;
+    }
+    .name h6{
+        font-size: 14px;
+    }
+    .info{
+        font-size: 12px;
+        gap: 0;
+    }    
+    
+}
+
+@media(max-width: 570px){
+
+    img{
+        width: 400px;
+        height: 400px;
+    }
+}
+
+@media(max-width : 520px){
+    .profileDetails{
+        gap: 10px;
+    }
+    .dp img{
+        width: 120px;
+        height: 120px;
+    }
+
+    .nameDetails h4, .nameDetails h6{
+        font-size: 10px;
+    }
+    .nameDetails h5{
+        font-size: 14px;
+        font-weight: bolder;
+    }
+    .firstline h6{
+        font-size: 11px;
+    }
+    .name h6{
+        font-size: 12px;
+    }
+
+}
+@media(max-width : 460px){
+    .profileDetails{
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .myDetails{
+        width: 100%;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 5px;
+    }
+    
+    .dp img{
+        width: 100px;
+        height: 100px;
+    }
+    .name{
+        display: none;
+    }
+    .nameDetails{
+        gap: 10px;
+    }
+
+    .nameDetails,.firstline, .info{
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    img{
+        width: 350px;
+        height: 400px;
+    }
+
+}
+
+
+
+@media(max-width : 460px){
+    img{
+        width: 300px;
+        height: 350px;
+    }
+    .images{
+        gap: 30px;
+    }
+
+    .profileName{
+        font-size: 15px;        
+    }
+    .fig p{
+        font-size: 22px;
+    }
+
+    .fig .bi:hover {
+        font-size: 1rem;
+    }
+    
+}
+@media(max-width : 350px){
+    img{
+        width: 270px;
+        height: 300px;
+    }
+}
