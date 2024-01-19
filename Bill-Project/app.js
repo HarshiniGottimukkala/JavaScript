@@ -12,12 +12,11 @@ let navSlide = () => {
 
 navSlide();
 
+let productdetails = document.querySelector(".productdetails");
 
+productdetails.addEventListener("submit", (e) => {
+    e.preventDefault();
 
-let submit = document.querySelector(".submit");
-let button = document.querySelector(".button");
-
-button.addEventListener("click", () => {
 
     let products = document.querySelector('.products');
     let result = document.createElement('div');
@@ -73,9 +72,11 @@ button.addEventListener("click", () => {
         child.innerHTML = ` Total bill with 18% GST is ${finalPayment}`;
         result.appendChild(child);
 
+        
+
     }
     else {
-        console.log("please fill the form")
+        alert("please fill the form");
     }
 
 
